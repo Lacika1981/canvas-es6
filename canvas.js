@@ -9,7 +9,7 @@ class Path {
         this.height = height;
         this.ctx = ctx;
     }
-};
+}
 
 class Rectangle extends Path {
     constructor(x, y, width, height, ctx) {
@@ -26,7 +26,7 @@ class Rectangle extends Path {
         ctx.closePath();
         ctx.stroke();
     }
-};
+}
 
 class Triangle extends Path {
     constructor(x, y, width, height, ctx, strokeT) {
@@ -42,12 +42,12 @@ class Triangle extends Path {
         ctx.closePath();
         ctx.stroke();
     }
-    
+
     fillTri() {
         ctx.fillStyle = "green";
         ctx.fill();
     }
-};
+}
 
 const rect = new Rectangle(200, 200, 200, 200, ctx);
 const tri = new Triangle(250, 250, 100, 100, ctx, "red");
